@@ -2,7 +2,8 @@
 [JINS MEME(2021年モデル)](https://jinsmeme.com/)のJINS MEME LoggerをPythonのWebSocketサーバーで受信するサンプルです。
 
 # Logging Data
-以下のデータに対応しています。
+以下のデータに対応しています。<br>
+各データの定義は[JINS MEME Platform：データ定義](https://jins-meme.github.io/sdkdoc2/basics/definition.html)を参照ください。
 * 20Hzデータ(currentData)<br>約20Hzでデータを取得でき、動きの把握やコントローラーなど精緻なデータの即時取得・分析に適したモードです。<br>このデータはJINS MEMEとスマートフォンがBluetooth接続している時のみ生成されます。
 * 15秒間隔データ(logicIndexData)<br>15秒間隔データは生体指標を出力する一番粒度の細かいデータです。<br>このデータはJINS MEMEとスマートフォンがBluetooth接続している時のみ生成されます。
 * 60秒間隔データ(summaryData)<br>1分間に1回データを取得できる、長時間の状態変化をモニタリングするのに適したモードです。
