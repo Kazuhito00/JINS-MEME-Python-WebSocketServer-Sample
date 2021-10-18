@@ -30,7 +30,7 @@ pip install websocket-server
 ```bash
 python Sample-currentData.py
     or
-python Sample-Sample-summaryData.py
+python Sample-summaryData.py
     or
 python Sample-logicIndexData.py
     or
