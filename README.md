@@ -38,8 +38,8 @@ python Sample-fastHeadMotion.py
 python Sample-slowHeadMotion.py
 ```
 * --host<br>
-WebSocketServerのPCのIPアドレス<br>
-デフォルト：192.168.179.11
+WebSocketServerのPCのIPアドレス ※未指定時は自動でプログラム起動PCのIPを指定<br>
+デフォルト：None
 * --port<br>
 WebSocketServerのPCのポート<br>
 デフォルト：8080
