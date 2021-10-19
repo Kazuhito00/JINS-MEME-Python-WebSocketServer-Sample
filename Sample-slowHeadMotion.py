@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import json
+import socket
 import argparse
 
 from websocket_server import WebsocketServer
@@ -9,7 +10,7 @@ from websocket_server import WebsocketServer
 def get_args():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("--host", type=str, default='192.168.179.11')
+    parser.add_argument("--host", type=str, default=None)
     parser.add_argument("--port", type=int, default=8080)
 
     args = parser.parse_args()
@@ -62,6 +63,11 @@ def main():
 
     host = args.host
     port = args.port
+
+    if host is None:
+        host = socket.gethostbyname(socket.gethostname())
+
+    print('Server ' + str(host) + ':' + str(port))
 
     # サーバーインスタンス
     server = WebsocketServer(host=host, port=port)
