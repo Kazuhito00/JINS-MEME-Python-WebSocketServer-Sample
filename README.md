@@ -26,7 +26,6 @@ pip install websocket-server
 
 # Demo
 デモの実行方法は以下です。
-#### Face Mesh
 ```bash
 python Sample-currentData.py
     or
@@ -53,4 +52,4 @@ WebSocketServerのPCのポート<br>
 高橋かずひと(https://twitter.com/KzhtTkhs)
  
 # License 
-mediapipe-python-sample is under [MIT License](LICENSE).
+JINS-MEME-Python-WebSocketServer-Sample is under [MIT License](LICENSE).
